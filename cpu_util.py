@@ -15,7 +15,6 @@ ax.bar(x=x, height=values, color=colors)
 for i in range(len(values)):
     plt.text(i, values[i] + 0.5, values[i], ha = 'center', weight='bold', color='black')
 
-
 ax.set_ylim(0,100)
 
 ax.set_ylabel('CPU Usage (%)')

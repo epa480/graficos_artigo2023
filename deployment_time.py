@@ -13,7 +13,7 @@ width = 0.35
 fig, ax = plt.subplots()
 
 ax.bar (labels, tempo1, width, label='Resource provisioning time')
-ax.bar (labels, tempo2, width, bottom=tempo1, label='Boot Time')
+ax.bar (labels, tempo2, width, bottom=tempo1, label='Boot time')
 
 ## valores no meio da barra
 for bar in ax.patches:
