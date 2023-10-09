@@ -36,4 +36,7 @@ ax.set_ylabel('Deployment Time of a single VM (seconds)')
 ax.set_xlabel ('OpenStack')
 ax.legend(loc=1) ## loc=1 (upper right)
 
+plt.savefig("deployment_time.png",
+            transparent=True)
+
 plt.show()
