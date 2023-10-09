@@ -17,7 +17,11 @@ for i in range(len(values)):
 
 ax.set_ylim(0,36)
 
-ax.set_ylabel('Throughput (Gbps)')
+ax.set_ylabel('Internal Throughput Rate (Gbps)')
 ax.set_xlabel('OpenStack')
+
+plt.savefig("network_internal_throughput_rate.png",
+            transparent=True)
+
 
 plt.show()

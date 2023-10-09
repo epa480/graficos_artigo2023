@@ -17,7 +17,10 @@ for i in range(len(values)):
 
 ax.set_ylim(0,0.6)
 
-ax.set_ylabel('Latency (ms)')
+ax.set_ylabel('RTT Ping (ms)')
 ax.set_xlabel('OpenStack')
+
+plt.savefig("network_internal_rtt.png",
+            transparent=True)
 
 plt.show()

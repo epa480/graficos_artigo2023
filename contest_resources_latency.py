@@ -15,11 +15,12 @@ ax.bar(x = x, height = values, yerr = error_values, color=colors, capsize = 10)
 for i in range(len(values)):
     plt.text(i, values[i]/2 - 0.2, round(values[i],3), ha = 'center', weight='bold', color='white')
 
-
-
 ax.set_ylim(0,6)
 
-ax.set_ylabel('Latency (ms)')
+ax.set_ylabel('Resources for Competition - Latency (ms)')
 #ax.set_xlabel('OpenStack')
+
+plt.savefig("network_competition_k8s.png",
+            transparent=True)
 
 plt.show()

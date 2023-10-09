@@ -20,4 +20,7 @@ ax.set_ylim(0,100)
 ax.set_ylabel('CPU Usage (%)')
 ax.set_xlabel('OpenStack')
 
+plt.savefig("cloud_cpu_util.png",
+            transparent=True)
+
 plt.show()

@@ -21,4 +21,7 @@ ax.set_ylim(0,32)
 ax.set_ylabel('Memory Usage (GB)')
 ax.set_xlabel('OpenStack')
 
+plt.savefig("memory_usage.png",
+            transparent=True)
+
 plt.show()

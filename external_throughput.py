@@ -18,7 +18,10 @@ for i in range(len(values)):
 
 ax.set_ylim(0,1024)
 
-ax.set_ylabel('external Throughput (Mbps)')
+ax.set_ylabel('External Throughput Rate (Mbps)')
 ax.set_xlabel('OpenStack')
+
+plt.savefig("network_ext_throughput_rate.png",
+            transparent=True)
 
 plt.show()
